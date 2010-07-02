@@ -2,3 +2,4 @@ rails --version=2.3.5
 devise --version=1.0.8
 warden
 factory_girl
+acts_as_tree

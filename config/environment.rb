@@ -23,6 +23,7 @@ Rails::Initializer.run do |config|
   config.gem 'warden'
   config.gem 'devise'
   config.gem 'factory_girl'
+  config.gem 'acts_as_tree'
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named

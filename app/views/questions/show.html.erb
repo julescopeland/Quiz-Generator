@@ -7,6 +7,10 @@
   <b>Answer:</b>
   <%=h @question.answer %>
 </p>
+<p>
+	<b>Categories:</b>
+	<%= categories_for(@question) %>
+</p>
 <% unless @question.user.nil? %>
 <p>
 	<b>Submitted by:</b>

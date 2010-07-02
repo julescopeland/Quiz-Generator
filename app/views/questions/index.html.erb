@@ -4,6 +4,7 @@
   <tr>
     <th>Question</th>
     <th>Answer</th>
+    <th>Categories</th>
     <th>Submitted by</th>
   </tr>
 
@@ -11,6 +12,7 @@
   <tr>
     <td><%=h question.question %></td>
     <td><%=h question.answer %></td>
+    <td><%= categories_for(question) %></td>
     <td><%=h question.user.email unless question.user.nil? %></td>
     <td><%= link_to 'Show', question %></td>
     <td><%= link_to 'Edit', edit_question_path(question) %></td>

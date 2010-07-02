@@ -8,6 +8,13 @@
     <%= f.label :answer %><br />
     <%= f.text_area :answer, :rows => '5' %>
   </p>
+	<% for category in Category.find(:all) %>
+	<div>
+	  <%= check_box_tag "question[category_ids][]", category.id, @question.categories.include?(category) %>
+	  <%= category.name %>
+	</div>
+	<% end %>
+	
   <p>
     <%= f.submit button_label %>
   </p>

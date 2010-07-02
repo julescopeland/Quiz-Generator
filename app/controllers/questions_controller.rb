@@ -41,6 +41,7 @@ class QuestionsController < ApplicationController
   # POST /questions
   # POST /questions.xml
   def create
+    params[:question][:category_ids] ||= []
     @question = current_user.questions.new(params[:question])
 
     respond_to do |format|
