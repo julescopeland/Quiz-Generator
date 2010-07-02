@@ -1,0 +1,22 @@
+# == Schema Information
+# Schema version: 20100701132925
+#
+# Table name: questions
+#
+#  id         :integer         not null, primary key
+#  question   :text
+#  answer     :text
+#  created_at :datetime
+#  updated_at :datetime
+#  user_id    :integer
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  question: MyText
+  answer: MyText
+
+two:
+  question: MyText
+  answer: MyText
